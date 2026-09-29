@@ -108,10 +108,10 @@ a {
   font-weight: 600;
 }
 
-.brand .icon {
-  color: var(--coral-light);
-  width: 1.6rem;
-  height: 1.6rem;
+.brand .logo {
+  width: 2.1rem;
+  height: auto;
+  flex: none;
 }
 
 .nav-toggle {
@@ -952,9 +952,8 @@ h2.section-title + .section-lede {
     gap: 0.45rem;
   }
 
-  .brand .icon {
-    width: 1.35rem;
-    height: 1.35rem;
+  .brand .logo {
+    width: 1.8rem;
   }
 
   .header-inner {
