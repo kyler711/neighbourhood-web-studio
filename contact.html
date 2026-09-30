@@ -48,7 +48,83 @@
   <section>
     <div class="section-inner">
       <h1 class="page-title">Get in touch</h1>
-      <p class="section-lede">Message me your business name and I'll get started on a free demo. No cost, no obligation.</p>
+      <p class="section-lede">Tell me about your business and I'll get started on a free demo. No cost, no obligation.</p>
+
+      <form class="request-form" id="request-form" novalidate>
+        <h2 class="form-title">Request your free demo</h2>
+        <p class="form-hint">Fill this in and tap Send. WhatsApp opens with your answers already typed, so you just press send there.</p>
+
+        <div class="field">
+          <label for="rf-business">Business name <span class="req">(required)</span></label>
+          <input id="rf-business" name="business" type="text" autocomplete="organization" required>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="rf-name">Your name</label>
+            <input id="rf-name" name="name" type="text" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="rf-type">Type of business</label>
+            <select id="rf-type" name="type">
+              <option value="">Choose one</option>
+              <option>Cafe or restaurant</option>
+              <option>Home bakery or food</option>
+              <option>Shop or retail</option>
+              <option>Beauty, hair or nails</option>
+              <option>Tuition or classes</option>
+              <option>Repairs or services</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="rf-phone">Phone or WhatsApp number</label>
+            <input id="rf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+          </div>
+          <div class="field">
+            <label for="rf-insta">Instagram</label>
+            <input id="rf-insta" name="insta" type="text" placeholder="@yourshop" autocapitalize="off">
+          </div>
+        </div>
+        <p class="field-note" id="rf-contact-note">Give at least a phone number or an Instagram so I can reply.</p>
+
+        <fieldset class="field">
+          <legend>What do you want on your website?</legend>
+          <div class="check-grid">
+            <label><input type="checkbox" name="wants" value="Menu or price list"> Menu or price list</label>
+            <label><input type="checkbox" name="wants" value="Photo gallery"> Photo gallery</label>
+            <label><input type="checkbox" name="wants" value="Opening hours and map"> Opening hours and map</label>
+            <label><input type="checkbox" name="wants" value="Order form"> Order form</label>
+            <label><input type="checkbox" name="wants" value="Bookings or appointments"> Bookings or appointments</label>
+            <label><input type="checkbox" name="wants" value="Customer reviews"> Customer reviews</label>
+            <label><input type="checkbox" name="wants" value="WhatsApp button"> WhatsApp button</label>
+            <label><input type="checkbox" name="wants" value="About us story"> About us story</label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="rf-details">Anything else? Colours, style, sites you like</label>
+          <textarea id="rf-details" name="details" rows="4"></textarea>
+        </div>
+
+        <div class="field">
+          <label class="check-inline"><input type="checkbox" name="photos" id="rf-photos"> I have photos or a logo to send</label>
+          <p class="field-note">After you tap Send, add your photos in the WhatsApp chat with the paperclip or + button.</p>
+        </div>
+
+        <p class="form-error" id="rf-error" role="alert" hidden></p>
+
+        <button class="btn btn-primary" type="submit">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+          Send on WhatsApp
+        </button>
+        <p class="form-done" id="rf-done" role="status" hidden>WhatsApp should be open now. Press send there, then add any photos in the same chat.</p>
+      </form>
+
+      <h2 class="section-title contact-or">Or message me directly</h2>
 
       <div class="contact-grid">
         <div class="contact-card">
@@ -107,6 +183,7 @@
 </a>
 
 <script src="nav.js"></script>
+<script src="request-form.js"></script>
 
 </body>
 </html>
